@@ -1,0 +1,110 @@
+%
+% AllegThesis.tex
+% by A. Thall
+% 13. Feb 2003
+%
+% This document provides a sample Senior Comp Thesis template for use
+% by students in Allegheny's CS and Applied Computing programs.
+
+\NeedsTeXFormat{LaTeX2e}
+\documentclass[12pt]{report}
+%\usepackage[debug,draft,single]{gatorthesis} % for student workcopy
+\usepackage[debug,draft,double]{gatorthesis} % for student proof doublespace
+%\usepackage[single]{gatorthesis} % for student
+%\usepackage[bottom,double]{gatorthesis} % for final department copy
+%\usepackage[debug,draft,nolists,nofront,single]{gatorthesis} % more output options
+
+\usepackage{comment}
+\usepackage{doublespace}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{epsfig}
+\usepackage{fancybox}
+
+%put words in the hyphenation statement if you want to enforce
+%how LaTeX should break them (or not) at the end of a line.
+\hyphenation{itself repre-sen-tations linear}
+
+% The following provides a box to surround the thesis statement
+\newenvironment{Thesis}%
+{\begin{Sbox}\begin{minipage}{.95\linewidth}}%
+{\end{minipage}\end{Sbox}\begin{center}\fbox{\TheSbox}\end{center}}
+
+% Use GATHER as a WinEdt macro to set up pop-up menu and trees for selections from bibliography
+%GATHER{Bibdir/myBibtexDB.bib}
+% Use as many gather commands as you have separate .bib files
+%%%GATHER{Bibdir/reading.bib}
+
+\begin{document}
+
+\thesistitle{Analysis of ADC Waveforms in Mu2e Experiment}
+\thesisauthor{Seth Hirsh}
+\thesisadvisor{Dr. David Brown}
+%\thesisnumber{CS04-01}
+\thesisreadera{Prof. Yury Kolomensky}
+% \thesisreaderb{I.\ B.\ Third} \thesisreaderc{I.\ B.\ Fourth} \thesisreaderd{I.\ B.\ Fifth}
+\date{\FileRevised \\ $\mbox{}$Revision: 1.8 $\mbox{}$}
+
+\thesismaketitle
+
+%\thesismakecopyright
+
+\include{abstract}
+
+%\include{dedication}
+
+%\include{ack}
+
+% Andrew added this line to set tocdepth for including sections in TofContents
+\setcounter{tocdepth}{2}
+
+\setcounter{secnumdepth}{1}
+
+% Number subsubsections as well...
+%\setcounter{secnumdepth}{3}
+
+\tableofcontents
+%\listoftables
+%\listoffigures
+
+%\listofabbreviations
+%\include{glossary}
+
+% ch:overview
+\include{ch01_overview} % Introductory chapter
+% ch:relatedwork
+\include{ch02_tracker_electronics_corrections} % Background chapter
+% ch:thework
+\include{ch03_energy_reconstruction_methods} % Discussion of subdivision surfaces for m-rep boundaries
+                              % sec:subdivproximity
+                              % Section on proximity tests for subdivision boundaries
+                              % sec:subdivmedialinterp
+                              % Section on medial interpolation of subdivision solids
+%ch:conclusion
+\include{ch04_conclusion} % Chapter on DS-Surfaces:  Boundary Displacments and Texturing
+                              %   and on Multifigure Modeling of M-rep Subdivision Solids
+
+
+%\appendix
+%\include{appa}              % Appendix A---Limit Positions for Catmull-Clark Surfaces
+%\include{appb}              % Appendix B---Inverting Limit Positions for Irregular Meshes
+
+%\nocite{ckm-acmap-99}
+%\nocite{Dierckx93}
+%\nocite{obs-stcav-92}
+%\nocite{bb4471}
+
+%\nocite{*} includes all BibTeX references in the bibliography
+% COMMENT THIS OUT FOR YOUR FINAL VERSION
+\nocite{*}
+
+\begin{spacing}{1}
+  \bibliographystyle{plain}
+  \bibliography{Bibdir/myBibtexDB}
+\end{spacing}
+
+%\include{colophon}
+
+\typeout{THEPAGE \thepage}
+
+\end{document}

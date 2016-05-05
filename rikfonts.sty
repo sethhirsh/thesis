@@ -1,0 +1,24 @@
+% rikfonts.sty -- Special fonts I want to have available
+% Created: Sat May 18 12:39:55 1996 by r.faith@ieee.org
+% Revised: Sat May 18 12:40:09 1996 by r.faith@ieee.org
+% Copyright 1996 Rickard E. Faith (r.faith@ieee.org)
+% This program comes with ABSOLUTELY NO WARRANTY.
+% 
+% $Id: rikfonts.sty,v 1.1 1999/11/19 23:21:30 culver Exp $
+% 
+%
+
+\DeclareFontShape{OT1}{cmtt}{bx}{n}{
+  <5><6><7><8>cmbtt8
+  <9>cmbtt9
+  <10><10.95><12><14.4><17.28><20.74><24.88>cmbtt10
+  }{}
+\DeclareFontShape{OT1}{cmr}{bx}{sc}{
+  <5><6><7><8><9><10><10.95><12>
+  <14.4><17.28><20.74><24.88> cmbcsc10
+  }{}
+
+\DeclareFontFamily{OT1}{ccr}{}{}
+\DeclareFontShape{OT1}{ccr}{m}{sc}{<-> sub * ccr/c/sl}{}
+\DeclareFontShape{OT1}{ccr}{c}{sc}{<-> sub * ccr/c/sl}{}
+\DeclareFontShape{OT1}{ccr}{c}{sl}{<-> ccslc9}{}

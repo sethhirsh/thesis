@@ -1,0 +1,1080 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fit",
+				"fitLabel"
+			],
+			[
+				"plt",
+				"plotSampleBase"
+			],
+			[
+				"base",
+				"baseProcess"
+			],
+			[
+				"mea",
+				"measTimes"
+			],
+			[
+				"fi",
+				"fitResults"
+			],
+			[
+				"fo",
+				"fontsize"
+			],
+			[
+				"v8",
+				"v87b"
+			],
+			[
+				"v",
+				"v85b"
+			],
+			[
+				"v8f",
+				"v85f"
+			],
+			[
+				"Ped",
+				"Pedestal"
+			],
+			[
+				"erf",
+				"erfFit"
+			],
+			[
+				"wig",
+				"weightsa"
+			],
+			[
+				"wei",
+				"weightsa"
+			],
+			[
+				"ped",
+				"pedestals2"
+			],
+			[
+				"pe",
+				"pedestals2"
+			],
+			[
+				"pede",
+				"pedestals2"
+			],
+			[
+				"he",
+				"hallElField"
+			],
+			[
+				"bw",
+				"bwdMagNorm"
+			],
+			[
+				"fow",
+				"forwards"
+			],
+			[
+				"for",
+				"forwards"
+			],
+			[
+				"pre",
+				"press"
+			],
+			[
+				"vol",
+				"voltageError"
+			],
+			[
+				"cu",
+				"currentError"
+			],
+			[
+				"dis",
+				"dischargeVoltage"
+			],
+			[
+				"di",
+				"dischargeCurrent"
+			],
+			[
+				"pres",
+				"pressures"
+			],
+			[
+				"Measure",
+				"Measurements"
+			],
+			[
+				"num",
+				"numElectrons"
+			],
+			[
+				"nu",
+				"numElectrons"
+			],
+			[
+				"case",
+				"cases"
+			],
+			[
+				"opt",
+				"options"
+			],
+			[
+				"gre",
+				"greedyOption"
+			],
+			[
+				"op",
+				"optimal_costs"
+			],
+			[
+				"firs",
+				"firstPulseStd"
+			],
+			[
+				"data",
+				"data6"
+			],
+			[
+				"sec",
+				"secondPulseMean"
+			],
+			[
+				"mu",
+				"muonLifetimesEst"
+			],
+			[
+				"la",
+				"labelName"
+			],
+			[
+				"bin",
+				"bincenters"
+			],
+			[
+				"rand",
+				"randExpo"
+			],
+			[
+				"ran",
+				"rangeOfChannels"
+			],
+			[
+				"adc",
+				"adc2mV"
+			],
+			[
+				"cen",
+				"centers"
+			],
+			[
+				"lo",
+				"logged_time"
+			],
+			[
+				"predic",
+				"predictions"
+			],
+			[
+				"tra",
+				"trainData"
+			],
+			[
+				"dat",
+				"dataCent"
+			],
+			[
+				"err",
+				"error"
+			],
+			[
+				"studDa",
+				"studentDataCent"
+			],
+			[
+				"stud",
+				"studentDataCent"
+			],
+			[
+				"stu",
+				"studentDataCent"
+			],
+			[
+				"ax",
+				"axes"
+			],
+			[
+				"rec",
+				"recoFace"
+			],
+			[
+				"C",
+				"CelebrityDatabase"
+			],
+			[
+				"da",
+				"dataCent"
+			],
+			[
+				"as",
+				"astype"
+			],
+			[
+				"dt",
+				"dataCent"
+			],
+			[
+				"ms",
+				"masked_im"
+			],
+			[
+				"mas",
+				"masked_im"
+			],
+			[
+				"nan",
+				"nan_to_num"
+			],
+			[
+				"tr",
+				"trainData"
+			],
+			[
+				"tran",
+				"trainData"
+			],
+			[
+				"train",
+				"trainData"
+			],
+			[
+				"sqrt",
+				"sqrtS"
+			],
+			[
+				"k",
+				"kNearestNeighbor"
+			],
+			[
+				"va",
+				"validation"
+			],
+			[
+				"sa",
+				"shape"
+			],
+			[
+				"mean",
+				"means"
+			],
+			[
+				"acc",
+				"accuracy"
+			],
+			[
+				"ac",
+				"accuracy"
+			],
+			[
+				"val",
+				"validationData"
+			],
+			[
+				"vali",
+				"validationLabels"
+			],
+			[
+				"risk",
+				"risk"
+			],
+			[
+				"labl",
+				"labels"
+			],
+			[
+				"training",
+				"trainingLabels"
+			],
+			[
+				"tim",
+				"timeDifference"
+			],
+			[
+				"ris",
+				"risk"
+			],
+			[
+				"cro",
+				"crossEntropyRisk"
+			],
+			[
+				"ste",
+				"stepsize"
+			],
+			[
+				"min",
+				"minimums"
+			],
+			[
+				"Get",
+				"GetEntries"
+			],
+			[
+				"ex",
+				"expRep"
+			],
+			[
+				"Ger",
+				"GetEntries"
+			],
+			[
+				"upd",
+				"update1"
+			],
+			[
+				"up",
+				"update2"
+			],
+			[
+				"upda",
+				"update2"
+			],
+			[
+				"Me",
+				"MeV2keV"
+			],
+			[
+				"sum",
+				"sums"
+			],
+			[
+				"peak",
+				"peakPeds"
+			],
+			[
+				"trac",
+				"tracePrediction"
+			],
+			[
+				"traini",
+				"training_data"
+			],
+			[
+				"col",
+				"columns"
+			],
+			[
+				"msot",
+				"most_common_string"
+			],
+			[
+				"ra",
+				"randForestTrace"
+			],
+			[
+				"labe",
+				"labels"
+			],
+			[
+				"lab",
+				"label_subset"
+			],
+			[
+				"tree",
+				"tree_collection"
+			],
+			[
+				"pred",
+				"predict"
+			],
+			[
+				"ch",
+				"choose_dims"
+			],
+			[
+				"subs",
+				"subset_dims"
+			],
+			[
+				"possi",
+				"possibleCuts"
+			],
+			[
+				"bes",
+				"best_impurities"
+			],
+			[
+				"cut",
+				"cutValue"
+			],
+			[
+				"best_im",
+				"best_impurity"
+			],
+			[
+				"max",
+				"max_depth"
+			],
+			[
+				"pos",
+				"possibleCuts"
+			],
+			[
+				"Fit",
+				"FitType"
+			],
+			[
+				"Trk",
+				"TrkChargeReco"
+			],
+			[
+				"TGR",
+				"TGraphErrors"
+			],
+			[
+				"er",
+				"errorX"
+			],
+			[
+				"TGra",
+				"TGraphErrors"
+			],
+			[
+				"SetPa",
+				"SetParLimits"
+			],
+			[
+				"hi",
+				"hits"
+			],
+			[
+				"hit",
+				"hit"
+			],
+			[
+				"sam",
+				"samplePeriod"
+			],
+			[
+				"run",
+				"runInfo"
+			],
+			[
+				"fitPa",
+				"fitParamsVec"
+			],
+			[
+				"his",
+				"hits"
+			],
+			[
+				"mc",
+				"mcenergies1"
+			],
+			[
+				"pea",
+				"peakPeds"
+			],
+			[
+				"en",
+				"entry"
+			],
+			[
+				"ret",
+				"retval"
+			],
+			[
+				"lin",
+				"linRes"
+			],
+			[
+				"adcTo",
+				"adcToVoltage"
+			],
+			[
+				"ele",
+				"electrons2"
+			],
+			[
+				"shi",
+				"shift2"
+			],
+			[
+				"lst",
+				"lst"
+			],
+			[
+				"fitP",
+				"fitParam1"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "ch02_tracker_electronics_corrections.tex",
+			"settings":
+			{
+				"buffer_size": 4346,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ch03_energy_reconstruction_methods.tex",
+			"settings":
+			{
+				"buffer_size": 23268,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ch04_conclusion.tex",
+			"settings":
+			{
+				"buffer_size": 398,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "Open",
+		"selected_items":
+		[
+			[
+				"Open",
+				"Sublime-IJulia: Open New IJulia Console"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 364.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/seth/Desktop/AlleghenyThesis"
+	],
+	"file_history":
+	[
+		"/Users/seth/Desktop/AlleghenyThesis/AllegThesis.tex",
+		"/Users/seth/Desktop/AlleghenyThesis/ch01_overview.tex",
+		"/Users/seth/Desktop/AlleghenyThesis/ch03_energy_reconstruction_methods.tex",
+		"/Users/seth/Desktop/AlleghenyThesis/ch02_tracker_electronics_corrections.tex",
+		"/Users/seth/Desktop/AlleghenyThesis/gatorthesis.sty",
+		"/Users/seth/Desktop/Energy Reconstruction Plots/Plots/fit2.py",
+		"/Users/seth/Desktop/Energy Reconstruction Plots/Plots/sum.py",
+		"/Users/seth/Downloads/hw4-code-23885053-1/problem7.py",
+		"/Users/seth/Desktop/Energy Reconstruction Plots/Plots/plotSampleWaveforms.py",
+		"/Users/seth/Desktop/170/hw11/problem7.py",
+		"/Users/seth/Desktop/Math 128a/hw9/hw9.tex",
+		"/Users/seth/Desktop/Threshold Comparison/NoNoise/peakMinusPedSim.py",
+		"/Users/seth/Desktop/Threshold Comparison/peakMinusPed.py",
+		"/Users/seth/Desktop/Math 128a/hw9/hw8.tex",
+		"/Users/seth/Desktop/170/hw10/hw10.tex",
+		"/Users/seth/Downloads/euler (1).m",
+		"/Users/seth/Desktop/BPURS/BPURS Abstract 2/BPURSAbstract.tex",
+		"/Users/seth/Desktop/170/hw8/hw8v2.tex",
+		"/Users/seth/Desktop/HAL/analysis3.py",
+		"/Users/seth/Downloads/geant4_10_02_b01/source/processes/electromagnetic/lowenergy/src/G4LivermorePolarizedGammaConversionModel.cc",
+		"/Users/seth/Desktop/HAL/analysis2.py",
+		"/Users/seth/Desktop/HAL/analysis1.py",
+		"/Users/seth/Downloads/pleg-1.m",
+		"/Users/seth/Downloads/schroderbisection-2.m",
+		"/Users/seth/Desktop/Math 128a/Project2/pleg.m",
+		"/Users/seth/Desktop/Math 128a/Project2/geomMean.m",
+		"/Users/seth/Desktop/Math 128a/Project2/schroderbisection.m",
+		"/Users/seth/Desktop/Math 128a/Project2/sympleg.m",
+		"/Users/seth/Desktop/Math 128a/Project2/gaussint.m",
+		"/Users/seth/Desktop/Math 128a/Project2/gausInt3.m",
+		"/Users/seth/Desktop/Math 128a/Project2/g.m",
+		"/Users/seth/Downloads/gadap.m",
+		"/Users/seth/Desktop/Senior Thesis/Thesis/seniorthesis-main.tex",
+		"/Users/seth/Desktop/Senior Thesis/Thesis/seniorthesis-main copy.tex",
+		"/Users/seth/Downloads/seniorthesis-main.tex",
+		"/Users/seth/Desktop/Senior Thesis/templates/main.tex",
+		"/Users/seth/Desktop/Senior Thesis/templates/abstract.tex",
+		"/Users/seth/Desktop/Senior Thesis/templates/contents.tex",
+		"/Users/seth/Desktop/Senior Thesis/templates/propcover.tex",
+		"/Users/seth/Desktop/111 ADV Local/HAL/plot.py",
+		"/Users/seth/Desktop/170/hw7/hw7_2.py",
+		"/Users/seth/Desktop/170/hw7.tex",
+		"/Users/seth/Desktop/170/hw7/generate_instances.py",
+		"/Users/seth/Desktop/170/hw6.tex",
+		"/Users/seth/Desktop/170/hw7/hw7.py",
+		"/Users/seth/Desktop/Math 128a/hw6/hw5.tex",
+		"/Users/seth/Desktop/Math 128a/hw6/p3.py",
+		"/Users/seth/Desktop/Cyberduck Downloads/peakMinusPed.py",
+		"/Users/seth/Desktop/Math 128a/hw5/computePi.py",
+		"/Users/seth/Desktop/Mu2e doc/records.tex",
+		"/Users/seth/Desktop/Math 128a/hw4/hw4.tex",
+		"/Users/seth/Desktop/Math 128a/hw5/hw5.tex",
+		"/Users/seth/Downloads/Untitled3.m",
+		"/Users/seth/Desktop/Muon Lifetime/MuonLifetimeReport/muon.tex",
+		"/Users/seth/Desktop/170/hw4_source.tex",
+		"/Users/seth/Desktop/111 ADV Local/linearityPulseHeight.py",
+		"/Users/seth/Desktop/170/hw3v9.tex",
+		"/Users/seth/Desktop/Math 128a/hw3.tex",
+		"/private/var/folders/dw/sg2zvv_d1md9nc42qsrk7c7m0000gn/T/e069a9f0-6f6e-44b0-9d03-78d4b093dd08/home/pixel/plotUndershootScale.py",
+		"/private/var/folders/dw/sg2zvv_d1md9nc42qsrk7c7m0000gn/T/9021c8af-023a-4342-a9d8-11d3e309cc73/home/online1/sethhirsh/localMu2e/fitData2.cc",
+		"/Users/seth/Desktop/Mu2e doc/records copy.tex",
+		"/Users/seth/Desktop/Error Analysis/errorAnalysis.tex",
+		"/private/var/folders/dw/sg2zvv_d1md9nc42qsrk7c7m0000gn/T/9021c8af-023a-4342-a9d8-11d3e309cc73/home/online1/sethhirsh/localMu2e/fitModel.cc",
+		"/Users/seth/Library/Application Support/Sublime Text 3/Packages/IJulia/Sublime-IJulia.sublime-settings",
+		"/Users/seth/Library/Application Support/Sublime Text 3/Packages/User/Sublime-IJulia.sublime-settings",
+		"/Users/seth/Desktop/cv/SethHirshCV.tex",
+		"/Users/seth/Desktop/cv/CV copy 2.tex",
+		"/Users/seth/Desktop/189/hw7/problem3.py",
+		"/Users/seth/Desktop/189/hw7/eigenfaces_data/problem3.py",
+		"/Users/seth/Desktop/189/hw7/joke_data/problem2.py",
+		"/Users/seth/Desktop/189/hw6/dataset/problem7.py",
+		"/Users/seth/Desktop/Cyberduck Downloads/plots.py",
+		"/Users/seth/Desktop/Cyberduck Downloads/gains.py",
+		"/Users/seth/Desktop/Cyberduck Downloads/pythonTools.py",
+		"/private/var/folders/dw/sg2zvv_d1md9nc42qsrk7c7m0000gn/T/f5c8b68b-8a46-460a-a838-8e248e86aec6/home/online1/sethhirsh/localMu2e/Offline6/Offline/TrackerMC/src/StrawWaveform.cc",
+		"/Users/seth/Desktop/189/hw6/dataset/runCensus.py",
+		"/Users/seth/Desktop/189/hw1/hw1-code-23885053/trainDigi.py",
+		"/Users/seth/Desktop/Cyberduck Downloads/comparePeakPedSum2.py",
+		"/private/var/folders/dw/sg2zvv_d1md9nc42qsrk7c7m0000gn/T/f5c8b68b-8a46-460a-a838-8e248e86aec6/home/online1/sethhirsh/localMu2e/Offline6/Offline/TrackerMC/src/StrawHitsFromStrawDigis_module.cc",
+		"/private/var/folders/dw/sg2zvv_d1md9nc42qsrk7c7m0000gn/T/f5c8b68b-8a46-460a-a838-8e248e86aec6/home/online1/sethhirsh/localMu2e/Offline6/Offline/TrkChargeReco/src/PeakFitRoot.cc",
+		"/private/var/folders/dw/sg2zvv_d1md9nc42qsrk7c7m0000gn/T/f5c8b68b-8a46-460a-a838-8e248e86aec6/home/online1/sethhirsh/localMu2e/Offline6/Offline/TrkChargeReco/src/ComboPeakFitRoot.cc",
+		"/private/var/folders/dw/sg2zvv_d1md9nc42qsrk7c7m0000gn/T/f5c8b68b-8a46-460a-a838-8e248e86aec6/home/online1/sethhirsh/localMu2e/Offline6/Offline/TrkChargeReco/src/PeakFit.cc",
+		"/private/var/folders/dw/sg2zvv_d1md9nc42qsrk7c7m0000gn/T/f5c8b68b-8a46-460a-a838-8e248e86aec6/home/online1/sethhirsh/localMu2e/Offline6/Offline/TrkChargeReco/inc/PeakFitRoot.hh",
+		"/private/var/folders/dw/sg2zvv_d1md9nc42qsrk7c7m0000gn/T/f5c8b68b-8a46-460a-a838-8e248e86aec6/home/online1/sethhirsh/localMu2e/Offline6/Offline/TrkChargeReco/inc/PeakFit.hh",
+		"/private/var/folders/dw/sg2zvv_d1md9nc42qsrk7c7m0000gn/T/f5c8b68b-8a46-460a-a838-8e248e86aec6/home/online1/sethhirsh/localMu2e/Offline6/Offline/TrkChargeReco/inc/ComboPeakFitRoot.hh",
+		"/private/var/folders/dw/sg2zvv_d1md9nc42qsrk7c7m0000gn/T/f5c8b68b-8a46-460a-a838-8e248e86aec6/home/online1/sethhirsh/localMu2e/Offline6/Offline/TrkChargeReco/src/PeakFitFunction.cc",
+		"/Users/seth/Desktop/189/hw4/data/hw4temp.tex",
+		"/Users/seth/Desktop/189/hw4/data/hw4.tex",
+		"/Users/seth/Desktop/189/hw5/runSpam.py",
+		"/Users/seth/Desktop/189/hw5/census-dataset/runCensus.py",
+		"/Users/seth/Desktop/189/hw5/census-dataset/DecisionTree.py",
+		"/Users/seth/Desktop/189/hw5/hw5report.tex",
+		"/Users/seth/Desktop/189/hw5/hw5.tex",
+		"/Users/seth/Desktop/189/hw5/spam-dataset/DecisionTree.py",
+		"/Users/seth/Desktop/189/hw5/spam-dataset/RandomForest.py",
+		"/Users/seth/Desktop/189/hw5/spam-dataset/featurize.py",
+		"/Users/seth/Desktop/189/hw5/spam-dataset/DecisionTree copy 2.py",
+		"/Users/seth/Dropbox/Mu2e2/scifile.tex",
+		"/Users/seth/Desktop/cv/CV.tex",
+		"/private/var/folders/dw/sg2zvv_d1md9nc42qsrk7c7m0000gn/T/f5c8b68b-8a46-460a-a838-8e248e86aec6/home/online1/sethhirsh/localMu2e/Offline6/Offline/TrackerConditions/src/StrawElectronics.cc",
+		"/private/var/folders/dw/sg2zvv_d1md9nc42qsrk7c7m0000gn/T/f5c8b68b-8a46-460a-a838-8e248e86aec6/home/online1/sethhirsh/localMu2e/fitData2.cc",
+		"/private/var/folders/dw/sg2zvv_d1md9nc42qsrk7c7m0000gn/T/f5c8b68b-8a46-460a-a838-8e248e86aec6/home/online1/sethhirsh/localMu2e/fitData.cc",
+		"/private/var/folders/dw/sg2zvv_d1md9nc42qsrk7c7m0000gn/T/f5c8b68b-8a46-460a-a838-8e248e86aec6/home/online1/sethhirsh/localMu2e/computeDoublePeaks.cc",
+		"/Users/seth/Desktop/Cheat Sheet/physics.tex",
+		"/Users/seth/Desktop/Cheat Sheet/records copy.tex",
+		"/Users/seth/Desktop/189/hw4/data/problem1.py",
+		"/Users/seth/Desktop/189/hw3/data/hw3.tex",
+		"/Users/seth/Desktop/189/hw3/data/problem1.py",
+		"/Users/seth/Desktop/189/hw4/data/problem3.py",
+		"/private/var/folders/dw/sg2zvv_d1md9nc42qsrk7c7m0000gn/T/7fe88424-7c67-475b-a04a-17e051f1d2b8/home/online1/sethhirsh/localMu2e/fitData.cc",
+		"/Users/seth/Desktop/189/hw1/data/digit-dataset/train.py",
+		"/Users/seth/Desktop/209/hw1.tex",
+		"/Users/seth/Downloads/geant4_10_02_b01/source/processes/hadronic/models/radioactive_decay/src/G4RadioactiveDecay.cc",
+		"/Users/seth/Desktop/gains/Fe55GainPlot.C",
+		"/Users/seth/Desktop/pythonScripts/plot.py",
+		"/Users/seth/Desktop/pythonScripts/double_coincidence_time_between.py",
+		"/Users/seth/Desktop/pythonScripts/roundRobin.py",
+		"/Users/seth/Downloads/histogram_demo_extended.py",
+		"/Users/seth/Desktop/Mu2e doc/convolutionDerivation.tex",
+		"/Users/seth/Desktop/Rajendran/My docs/doc3.tex",
+		"/Users/seth/Dropbox/plot.C",
+		"/Users/seth/Desktop/software/control.py",
+		"/Users/seth/Desktop/software/gen.sh",
+		"/Users/seth/Desktop/software/Hit.h",
+		"/Users/seth/Desktop/software/Dict.h",
+		"/Users/seth/Downloads/test.py",
+		"/Users/seth/Desktop/Rajendran/My docs/doc2.tex",
+		"/Users/seth/Desktop/Rajendran/My docs/doc1.tex"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"At ",
+			"Related",
+			"Advisor",
+			"advis",
+			"Rejection",
+			"png",
+			"sigma",
+			"initial ",
+			"which will",
+			"\\section",
+			"Baseline Fit Model",
+			"Baseline Fit Method",
+			"Distributio",
+			"Double Peak Meths",
+			"x",
+			"p_2",
+			"Track",
+			"Over",
+			"dynam",
+			"	\n",
+			"4",
+			"figure",
+			"Estima",
+			"Figure",
+			"cut",
+			"ylabel",
+			"_vmax",
+			"Runtim",
+			"plt.title(\"Peak Minus Pedestal\")",
+			"variabl",
+			"\\dept",
+			"cases = [[(106, 1), (132, 13), (120, 10), (128, 7), (100, 18), (182, 12), (98, 18), (162, 2),(48, 9), (164, 14),(88, 4)], \n[(115, 10), (25, 8), (135, 9), (197, 7), (41, 13), (157, 9), (199, 15), (19, 6), (103, 2), (85, 13)],\n[(100, 15), (146, 6), (94, 16), (180, 5), (68, 14), (148, 15), (6, 1), (104, 16), (130, 17), (184, 8), (4, 19)], \n[(133, 17), (125, 9), (27, 9), (99, 5)], \n[(28, 2), (68, 13), (184, 6)],\n[(107, 3), (47, 19), (149, 17), (21, 16)],\n[(64, 9), (152, 2), (156, 19), (48, 2), (34, 1)],\n[(177, 8), (83, 10), (41, 6), (149, 6)],\n[(158, 2), (157, 1)],\n[(173, 2),  (172, 1)]]\n\n\n\n\n\n",
+			"bridge",
+			"they are",
+			"since ",
+			"lst",
+			"Muon",
+			"noise",
+			"Analysis",
+			"034",
+			"Pro",
+			"Gauss",
+			"the timing resol",
+			"well with",
+			"label",
+			"labe",
+			"center",
+			"timeResol",
+			"uniform",
+			"any loss",
+			"th",
+			"???",
+			"table",
+			"x",
+			"b",
+			"san dieg",
+			"Pseu",
+			"pse",
+			"adc",
+			"fitSim",
+			"prepareSim",
+			"5",
+			"7",
+			"will be ",
+			"\\left \\vert",
+			"\\left",
+			"and cons",
+			"6",
+			"x",
+			"fitReal",
+			"aOversho",
+			"fitRea",
+			"fitRealDa",
+			"currentFile",
+			"julia ",
+			"julia",
+			"eigen",
+			"255",
+			"sys",
+			"n_{in}",
+			"normaliz",
+			"cross",
+			"risk",
+			"6ke",
+			"_peakFitOp",
+			"_peakFit",
+			"fittype",
+			"fit",
+			"config",
+			"$",
+			"-4",
+			"-3",
+			"1000",
+			"prin",
+			"trainingSamples",
+			"print",
+			"_fit",
+			"Begin",
+			"fitSim",
+			"unsigned ",
+			"Hit",
+			"prepar",
+			"cout",
+			"%",
+			"hit.ped",
+			"numSamples",
+			"MyHit",
+			"numSamples",
+			"cout",
+			"sqrt",
+			"graph",
+			"5",
+			"Uniform",
+			"table",
+			"margin",
+			"margi",
+			"abs",
+			"art",
+			"dot",
+			"inner",
+			"product",
+			"deed",
+			"exercise",
+			"\\ex",
+			"remove",
+			"aOver",
+			"fitS",
+			"sumO"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "ch02_tracker_electronics_corrections.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4346,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3274,
+								3274
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1248.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "ch03_energy_reconstruction_methods.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23268,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								551,
+								551
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 771.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "ch04_conclusion.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 398,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28,
+								28
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 126.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+	"project": "thesis.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Desktop/170/hw11/release.tex"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 300.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

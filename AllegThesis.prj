@@ -1,0 +1,74 @@
+246 Patch Control
+
+1
+1
+1
+AllegThesis.tex
+14
+14
+1
+
+
+
+
+
+
+ack.tex
+TeX
+1051642 0 0 1 0 1 0 0 866 354 0 22 1 -1 -1 0 0 2 0 0 2 1 0 1 0   0
+abstract.tex
+TeX
+269487098 0 2 15 2 2 154 154 1020 508 0 30 35 -1 -1 0 0 2 0 0 2 1 0 2 2   0
+AllegThesis.tex
+TeX
+135269370 0 40 26 40 20 110 110 777 464 0 174 239 -1 -1 0 0 2 0 0 2 1 0 20 40   0
+Bibdir\myBibtexDB.bib
+BibTeX
+1049586 0 86 101 86 1 66 66 733 401 0 22 256 -1 -1 0 0 45 0 0 45 1 0 1 86   0
+appa.tex
+TeX
+1051642 0 0 1 0 1 44 44 910 398 0 22 1 -1 -1 0 0 2 0 0 2 1 0 1 0   0
+appb.tex
+TeX
+1051642 0 0 1 0 1 66 66 932 420 0 22 1 -1 -1 0 0 2 0 0 2 1 0 1 0   0
+ch01_overview.tex
+TeX
+1051642 0 0 1 0 1 88 88 954 442 0 22 1 -1 -1 0 0 2 0 0 2 1 0 1 0   0
+ch02_relatedwork.tex
+TeX
+1051642 0 0 1 0 1 110 110 976 464 0 22 1 -1 -1 0 0 2 0 0 2 1 0 1 0   0
+ch03_thework.tex
+TeX
+1051642 0 0 1 4 1 132 132 998 486 0 22 69 -1 -1 0 0 2 0 0 2 1 0 1 4   0
+ch04_implementation.tex
+TeX
+1051642 0 0 1 0 1 154 154 1020 508 0 22 1 -1 -1 0 0 2 0 0 2 1 0 1 0   0
+ch05_conclusion.tex
+TeX
+1051642 0 0 1 0 1 0 0 866 354 0 22 1 -1 -1 0 0 2 0 0 2 1 0 1 0   0
+colophon.tex
+TeX
+1051642 0 0 1 0 1 22 22 888 376 0 22 1 -1 -1 0 0 2 0 0 2 1 0 1 0   0
+dedication.tex
+TeX
+1051642 0 0 1 0 1 44 44 910 398 0 22 1 -1 -1 0 0 20 0 0 20 1 0 1 0   0
+glossary.tex
+TeX
+1051642 0 0 1 0 1 66 66 932 401 0 22 1 -1 -1 0 0 18 0 0 18 1 0 1 0   0
+
+*AllegThesis.tex
+>
+*Bibdir/myBibtexDB.bib
+*abstract
+*dedication
+*ack
+*glossary
+*ch01_overview
+*ch02_relatedwork
+*ch03_thework
+*ch04_implementation
+*ch05_conclusion
+*appa
+*appb
+*colophon
+<

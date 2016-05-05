@@ -1,0 +1,393 @@
+% rikmacros.sty -- My macros
+% Created: Sat May 18 12:39:20 1996 by faith@acm.org
+% Revised: Wed Dec 17 18:20:55 1997 by faith@acm.org
+% Copyright 1996, 1997 Rickard E. Faith (faith@acm.org)
+% This program comes with ABSOLUTELY NO WARRANTY.
+% 
+% $Id: rikmacros.sty,v 1.1 1999/11/19 23:21:30 culver Exp $
+%
+
+%  \if@twoside
+%    \setlength\@tempdima        {\paperwidth}
+%    \addtolength\@tempdima      {-\textwidth}
+%    \setlength\oddsidemargin    {.5\@tempdima}
+%    \addtolength\oddsidemargin  {-1in}
+%    \setlength\marginparwidth   {.5\@tempdima}
+%    \addtolength\marginparwidth {-0.4in}
+%  \else
+%    \setlength\@tempdima        {\paperwidth}
+%    \addtolength\@tempdima      {-\textwidth}
+%    \setlength\oddsidemargin    {.5\@tempdima}
+%    \addtolength\oddsidemargin  {-1in}
+%    \setlength\marginparwidth   {.5\@tempdima}
+%    \addtolength\marginparwidth {-.4in}
+%  \fi
+%  \ifdim \marginparwidth >2in
+%     \setlength\marginparwidth{2in}
+%  \fi
+%  \@settopoint\oddsidemargin
+%  \@settopoint\marginparwidth
+%  \setlength\evensidemargin  {\paperwidth}
+%  \addtolength\evensidemargin{-2in}
+%  \addtolength\evensidemargin{-\textwidth}
+%  \addtolength\evensidemargin{-\oddsidemargin}
+%  \@settopoint\evensidemargin
+%  \addtolength\topmargin{-.25in}
+%  \addtolength\textheight{.5in}
+  
+\def\McHugh{\hbox{M\raise.5ex\hbox{c}Hugh}}
+
+%\newcommand{\V}{\mathbb{V}}
+%\newcommand{\I}{\mathbb{I}}
+%\renewcommand{\S}{{\cal S}}
+
+\newcommand{\V}{\mathcal{V}}
+\newcommand{\I}{\mathcal{I}}
+%\renewcommand{\S}{\mathcal{S}}
+\renewcommand{\S}{\mathbb{S}}
+
+% Why?  Because \cite[pp.~123]{foo} => [foo. 123] instead of [foo, pp.~123]
+% But if there's just one p or if anything preceeds p, it's fine.
+\def\@citex@[#1]{\@ifnextchar [%
+  {\ifthenelse{\equal{#1}{}}{\@citex[#1]}{\@citex[\hbox{}#1]}} 
+  {\ifthenelse{\equal{#1}{}}{\@citex[][#1]}{\@citex[][\hbox{}#1]}}}
+
+
+%\LGleftnumtrue\LGnuminterval=1
+
+\abbreviation{\AST}{\textsc{ast}}{abstract syntax tree}
+\abbreviation{\CFGCFG}{\textsc{cfg}}{context free grammar}
+\abbreviation{\cse}{\textsc{cse}}{common-subexpression elimination}
+\abbreviationr{\DAG}{\textsc{dag}}{directed, acyclic graph}
+\abbreviation{\DSL}{\textsc{dsl}}{domain-specific langauge}
+\abbreviation{\IR}{\textsc{ir}}{intermediate representation}
+%\abbreviation{\TRS}{\textsc{trs}}{term rewrite system}
+
+% UNIX is a registered trademark, in the United States and other countries,
+% licensed exclusively through X/Open Company Limited.
+\regtrademarkfull{\unix}{\textsc{u\kern-.04emnix}}%
+{\textsc{u\kern-.04emnix} is a registered trademark in the United States
+  and other countries, licensed exclusively through
+  X\kern-.04em/\kern-.04emOpen Company Limited.}
+\regtrademark{\hp}{HP}{Hewlett-Packard Corporation}
+\regtrademark{\convex}{\textsc{convex}}{Convex Computer Corporation}
+\trademark{\refine}{\textsc{Refine}}{Reasoning Systems, Inc}
+
+\newcommand{\marginfont}{\usefont{OT1}{ccr}{c}{sl}\small}
+
+\newcommand{\mpar}[1]{\mbox{}%
+  \marginpar{\raggedright{\hspace{0pt}\marginfont #1}}}
+\newcommand{\rmpar}[1]{\mbox{}%
+  \marginpar{\raggedleft{\hspace{0pt}\marginfont #1}}}
+\newcommand{\subsubsubsection}{\paragraph}
+
+\newcommand{\subsectionnotoc}{\@startsectionnotoc{subsection}{2}{\z@}%
+                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5ex \@plus .2ex}%
+                                     {\reset@font\large\bfseries}}
+
+\def\@startsectionnotoc#1#2#3#4#5#6{\if@noskipsec \leavevmode \fi
+   \par \@tempskipa #4\relax
+   \@afterindenttrue
+   \ifdim \@tempskipa <\z@
+     \@tempskipa -\@tempskipa \@afterindentfalse
+   \fi
+   \if@nobreak \everypar{}\else
+     \addpenalty{\@secpenalty}\addvspace{\@tempskipa}\fi \@ifstar
+     {\@ssect{#3}{#4}{#5}{#6}}%
+     {\@dblarg{\@sectnotoc{#1}{#2}{#3}{#4}{#5}{#6}}}}
+                             
+\def\@sectnotoc#1#2#3#4#5#6[#7]#8{%
+     \ifnum #2>\c@secnumdepth
+       \let\@svsec\@empty\else
+       \refstepcounter{#1}%
+       \protected@edef\@svsec{\@seccntformat{#1}}%
+     \fi
+     \@tempskipa #5\relax
+      \ifdim \@tempskipa>\z@
+        \begingroup #6\relax
+          \@hangfrom{\hskip #3\relax\@svsec}%
+                    {\interlinepenalty \@M #8\par}%
+        \endgroup
+       \csname #1mark\endcsname{#7}%\addcontentsline
+%         {toc}{#1}{\ifnum #2>\c@secnumdepth \else
+%                      \protect\numberline{\csname the#1\endcsname}\fi
+%                    #7}
+       \else
+        \def\@svsechd{#6\hskip #3\relax  %% \relax added 2 May 90
+                   \@svsec #8\csname #1mark\endcsname
+                      {#7}%\addcontentsline
+%                           {toc}{#1}{\ifnum #2>\c@secnumdepth \else
+%                           \protect\numberline{\csname the#1\endcsname}%
+%                                     \fi
+%                       #7}
+                      }\fi
+     \@xsect{#5}}
+
+
+\newcommand{\prog}[1]{\texttt{#1}\xspace}
+\newcommand{\system}[1]{\textsc{#1}\xspace}
+%\newcommand{\keyword}[1]{\texttt{#1}\xspace}
+\newcommand{\map}{\leftrightarrow}
+
+\newcommand{\cross}{\times}
+\newcommand{\eq}{=}
+
+% systems
+\newcommand{\dtre}{\system{dtre3}}
+\newcommand{\eli}{\system{Eli}}
+\newcommand{\suif}{\system{suif}}
+\newcommand{\cocktail}{\system{Cocktail}}
+\newcommand{\txl}{\system{txl}}
+\newcommand{\ZAP}{\system{zap}}
+\newcommand{\dialect}{\system{Dialect}}
+\newcommand{\pccts}{\system{pccts}}
+\newcommand{\sorcerer}{\system{Sorcerer}}
+\newcommand{\KIDS}{\system{KIDS}}
+
+% programs
+\newcommand{\texinfo}{\TeX{}Info\xspace}
+\newcommand{\info}{\prog{info}}
+\newcommand{\yacc}{\prog{yacc}}
+\newcommand{\byacc}{\prog{byacc}}
+\newcommand{\bison}{\prog{bison}}
+\newcommand{\antlr}{\prog{antlr}}
+\newcommand{\make}{\prog{make}}
+\newcommand{\lex}{\prog{lex}}
+\newcommand{\flex}{\prog{flex}}
+\newcommand{\trans}{\prog{trans}}
+\newcommand{\ptrans}{\prog{ptrans}}
+\newcommand{\mpl}{\prog{mpl}}
+\newcommand{\pvm}{\prog{pmv}}
+\newcommand{\mpi}{\prog{mpi}}
+\newcommand{\pthreads}{\prog{pthreads}}
+\newcommand{\cfront}{\prog{cfront}}
+\newcommand{\gcc}{\prog{gcc}}
+\newcommand{\eiffel}{\textsc{Eiffel}\xspace}
+\newcommand{\puma}{\prog{puma}}
+
+% Misc
+\newcommand{\modula}{\textsc{M\kern-.04emodula}\xspace}
+\newcommand{\lisp}{\textsc{Lisp}\xspace}
+\newcommand{\proteus}{\textsc{P\kern-.04emro\-teus}\protect\xspace}
+\newcommand{\khepera}{\textsc{K\kern-.04emhepera}\protect\xspace}
+\newcommand{\libmaa}{\textsc{libmaa}\protect\xspace}
+\newcommand{\sisal}{\textsc{S\kern-.04emisal}\xspace}
+%\newcommand{\unix}{\textsc{Unix}\xspace}
+%\newcommand{\AST}{\textsc{ast}\xspace}
+\newcommand{\postscript}{\textsc{PostScript}\xspace}
+\newcommand{\APL}{\textsc{apl}\xspace}
+\newcommand{\nesl}{\textsc{Nesl}\xspace}
+\newcommand{\fortran}{\textsc{F\kern-.04emortran}\xspace}
+\newcommand{\fortranN}{\textsc{F\kern-.04emortran} 90\xspace}
+\newcommand{\algol}{\textsc{Algol}\xspace}
+\newcommand{\hpf}{\textsc{hpf}\xspace}
+\newcommand{\maspar}{\textsc{MasPar}\xspace}
+\newcommand{\sql}{\textsc{sql}\xspace}
+\newcommand{\self}{SELF\xspace}
+\newcommand{\java}{\textsc{Java}\xspace}
+
+\newcommand{\lcc}{\texttt{lcc}\xspace}
+\newcommand{\C}{\textrm{C\spacefactor1000}\xspace}
+\newcommand{\CPP}{\textrm{C$++$\spacefactor1000}\xspace}
+\newcommand{\ccpp}{\textrm{CC$++$\spacefactor1000}\xspace}
+\newcommand{\pcpp}{\textrm{pC$++$\spacefactor1000}\xspace}
+\newcommand{\sagepp}{\textrm{Sage$++$}\xspace}
+\newcommand{\parafrase}{\textrm{Parafrase-2}\xspace}
+
+\newcommand{\node}[1]{\ensuremath{\mbox{\tt #1}}}
+\newcommand{\nodes}[2]{\ensuremath{\mbox{\tt #1}_#2}}
+
+\newcommand{\fig}[1]{Figure~\ref{fig:#1}} % FIXME.  Was vref
+\newcommand{\tab}[1]{Table~\ref{tab:#1}} % FIXME.  Was vref
+\newcommand{\sect}[1]{Section~\ref{sec:#1}}
+\newcommand{\ch}[1]{Chapter~\ref{ch:#1}}
+\newcommand{\ap}[1]{Appendix~\ref{ch:#1}}
+\newcommand{\tuple}[1]{Tuple~\ref{tuple#1}}
+\newcommand{\figinput}[1]{\input{#1.eepicemu}}
+
+% Hyphenate urls at the slash
+                                % Use url.sty instead
+%\newcommand{\url}[1]{\texttt{\hyphenchar\font=`\/#1\hyphenchar\font=`\-}}
+%\newcommand{\pathname}[1]{\texttt{\hyphenchar\font=`\/#1\hyphenchar\font=`\-}}
+
+%% Set up _ as \_ outside math mode and \sb in math mode:
+%% (in case you use _ outside math mode)
+% from program.sty
+\catcode`\_=\active \def_{\ifmmode\sb\else\p@sb\fi}
+\def\p@sb{\protect\@sb}
+\def\@sb{\_}
+
+% grammar support
+
+\newcommand{\ghost}[2][]{\setbox0=\hbox{#2}\hbox to\wd0{#1}}
+
+\def\leftline{%
+  \topsep 0ex%
+  \parsep 0ex%
+  \itemsep 0ex%
+  \parskip 0ex%
+  \partopsep 0ex%
+  \trivlist \raggedright \item[]}
+\let\endleftline=\endtrivlist
+\newcommand{\note}{\bigskip\par\noindent}
+
+% DON'T CHANGE ANY OF THIS EXCEPT FOR THE DISSERTATION
+\newcommand{\prd}[3][]{\noindent\begin{leftline}\hspace{1em}{\it #2}\ ::=\ %
+  \begin{minipage}[t]{.4\columnwidth}\raggedright #3\end{minipage}%
+    \ifthenelse{\equal{#1}{}}{}%
+    {\begin{minipage}[t]{.35\columnwidth}\raggedright\small [#1]\end{minipage}%
+      \vspace{1ex}}%
+    \end{leftline}}
+\newcommand{\prD}[3][]{\noindent\begin{leftline}\hspace{1em}\ghost{\it
+    #2}\ \ghost[$|$\hfil]{::=}\ %
+  \begin{minipage}[t]{.4\columnwidth}\raggedright #3\end{minipage}%
+    \ifthenelse{\equal{#1}{}}{}%
+    {\begin{minipage}[t]{.35\columnwidth}\raggedright\small [#1]\end{minipage}%
+      \vspace{1ex}}%
+    \end{leftline}}
+
+% DON'T CHANGE ANY OF THIS EXCEPT FOR THE DISSERTATION
+\newcommand{\pprd}[3][]{\noindent\begin{leftline}\hspace{1em}{\it #2}\ ::=\ %
+  \begin{minipage}[t]{.15\columnwidth}\raggedright #3\end{minipage}%
+    \ifthenelse{\equal{#1}{}}{}%
+    {\begin{minipage}[t]{.65\columnwidth}\raggedright\small [#1]\end{minipage}%
+      \vspace{1ex}}%
+    \end{leftline}}
+\newcommand{\pprD}[3][]{\noindent\begin{leftline}\hspace{1em}\ghost{\it
+    #2}\ \ghost[$|$\hfil]{::=}\ %
+  \begin{minipage}[t]{.15\columnwidth}\raggedright #3\end{minipage}%
+    \ifthenelse{\equal{#1}{}}{}%
+    {\begin{minipage}[t]{.65\columnwidth}\raggedright\small [#1]\end{minipage}%
+      \vspace{1ex}}%
+    \end{leftline}}
+
+% DON'T CHANGE ANY OF THIS EXCEPT FOR THE DISSERTATION
+\newcommand{\tra}[2]{\noindent\begin{leftline}
+  \begin{minipage}[b]{2.5in}\raggedright #1\end{minipage}
+    \hfill$\Longrightarrow$\hfill
+    \begin{minipage}[t]{3.05in}\raggedright #2\end{minipage}\end{leftline}}\newcommand{\trana}[2]{\noindent\begin{leftline}
+  \begin{minipage}[b]{2.5in}\raggedright #1\end{minipage}\hfill
+    \begin{minipage}[t]{3.05in}\raggedright #2\end{minipage}\end{leftline}}
+
+\newcommand{\opt}[1]{[\ #1\ ]}
+\newcommand{\optlist}[1]{\leftbrace\ #1\ \rightbrace}
+\newcommand{\lhs}[1]{{\it #1\/}}
+\newcommand{\leftbrace}{\char'173}  % for cmtt10 font
+\newcommand{\rightbrace}{\char'175}
+\newcommand{\lit}[1]{\mbox{\tt #1}\ifmmode\ \fi}
+\newcommand{\litf}[1]{\mbox{\tt #1}}
+\newcommand{\litb}[1]{\ifmmode\ \fi\mbox{\tt #1}}
+\newcommand{\litba}[1]{\ifmmode\ \fi\mbox{\tt #1}\ifmmode\ \fi}
+% These are from \bmod in plain.tex
+%\renewcommand{\in}{\mskip-\medmuskip\mkern5mu \mathbin{\rm
+%    in}\penalty900\mkern5mu\mskip-\medmuskip}
+\newcommand{\dotdot}{\mskip-\medmuskip\mkern5mu \mathbin{\rm
+    ..}\penalty900\mkern5mu\mskip-\medmuskip}
+%\newcommand{\zip}{\mathop{\rm zip}\nolimits}
+
+\newcommand{\litin}{\litba{in}}
+\newcommand{\litopen}{\lit{(/}}
+\newcommand{\litclose}{\litb{/)}}
+\newcommand{\litcol}{\litba{:}}
+\newcommand{\litlength}{\litf{length}}
+\newcommand{\litrange}{\litf{range}}
+\newcommand{\litdist}{\litf{dist}}
+\newcommand{\litadd}{\litf{add}}
+\newcommand{\litdepth}{\lit{depth=}}
+\newcommand{\litlet}{\lit{let}}
+\newcommand{\bs}{$\backslash$}
+\newcommand{\DEF}{\stackrel{def}{=}}
+
+% margin support (from uncthesis...)
+\def\riksetmargins{%
+                        % Don't change these
+\ifx\rikheadheight\@undefined\headheight 2ex\else\headheight\rikheadheight\fi
+\ifx\rikheadsep\@undefined\headsep .5in\else\headsep\rikheadsep\fi
+\ifx\rikfootskip\@undefined%
+\footskip .5in\advance\footskip 1ex\else\footskip\rikfootskip\fi
+%  \parindent 5em                % [XI. SPACING AND INDENTATION]
+
+%% textheight = rikpageheight - riktopmargin - rikbottommargin - extra
+\textheight\rikpageheight
+\advance\textheight -\riktopmargin
+\advance\textheight -\rikbottommargin
+\advance\textheight -\headheight
+%  \advance\textheight -\headsep
+\advance\textheight -1ex        %extra footskip
+%  \advance\textheight -\footskip
+
+%% topmargin = riktopmargin - 1in - voffset
+\topmargin\riktopmargin
+\advance\topmargin -1in
+\advance\topmargin -\voffset
+\advance\topmargin -\headsep
+%  \advance\topmargin \headheight
+
+%% textwidth = rikpagewidth - rikleftmargin - rikrightmargin
+\textwidth\rikpagewidth
+\advance\textwidth -\rikleftmargin
+\advance\textwidth -\rikrightmargin
+
+%% oddsidemargin = rikleftmargin - 1in - hoffset
+\oddsidemargin\rikleftmargin
+\advance\oddsidemargin -1in
+\advance\oddsidemargin -\hoffset
+\if@twoside
+\evensidemargin\rikrightmargin
+\advance\evensidemargin -1in
+\advance\evensidemargin -\hoffset
+\else
+\evensidemargin\oddsidemargin
+\fi
+
+\marginparwidth\oddsidemargin
+\advance\marginparwidth -\marginparsep
+}
+
+%\newenvironment{algorithm}[2]%
+%{\setbox123=\hbox{\textbf{#1}}\allowbreak\begingroup\samepage\vskip 
+%  1ex\trivlist\item\samepage\textbf{#1\boldmath#2}}%
+%{\textbf{End of \box123}\vskip 1ex\endtrivlist\endgroup}
+
+\newenvironment{algorithm}[2]%
+{\setbox123=\hbox{\textbf{#1}}\allowbreak\begingroup%
+  \samepage\vskip 1ex\trivlist\item\samepage\textbf{#1\boldmath#2}}%
+{\textbf{End of \box123}\vskip 1ex\endtrivlist\endgroup}
+
+\newenvironment{alg}%
+{\list{}{%
+    \topsep 0pt%
+    \partopsep 0pt%
+    \itemsep 0pt%
+    \parsep 0pt%
+    \listparindent 0pt%
+    \itemindent-\leftmargin}}
+  {\endlist}
+
+% make a subfig environment
+\newbox\subfigbox
+%\newbox\subcapsave
+%\newenvironment{subfig}[1]{\setbox\subcapsave=\hbox{\@captype#1}%
+
+%\newenvironment{subfig}[1]{\def\subcapsave{#1}%
+%  \setbox\subfigbox\hbox
+%  \bgroup}{\egroup\subfigure[\subcapsave]{\box\subfigbox}}
+
+\newenvironment{subfig}[1]{\def\subcapsave{#1}%
+  \setbox\subfigbox\hbox
+  \bgroup\begin{minipage}{\textwidth}}
+{\end{minipage}\egroup\subfigure[\subcapsave]{\box\subfigbox}}
+
+\newcommand{\addeqno}{\refstepcounter{equation}\eqno\hbox{\@eqnnum}}
+
+\newenvironment{tree}[2]%
+{\begin{minipage}[b]{#2}\begin{center}#1\\\begin{Sbox}%
+  \begin{minipage}{.9\textwidth}}
+{\end{minipage}\end{Sbox}\fbox{\TheSbox}\end{center}\end{minipage}}
+
+\newenvironment{treem}[2]%
+{\begin{minipage}{#2}\begin{center}#1\\\begin{Sbox}%
+  \begin{minipage}{.9\textwidth}}
+{\end{minipage}\end{Sbox}\fbox{\TheSbox}\end{center}\end{minipage}}
+
